@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <title>Volunteer Of Georgia</title>
+</head>
+<body>
+  <header>
+     <div class="navbar">          <!--NavBar Start Here -->
+        <div class="logo">
+        <a href="#"> <img id="logo-img" src="./img/greenspeak-high-resolution-color-logo.jpeg" alt="logo">Volunteers</a>
+      </div><ul class="links">
+        <li><a href="#" class="hero">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="#" class="getinvloved">Get Invloved</a></li>
+        <li><a href="#" class="events">Events</a></li>
+        <li><a href="#" class="contact">Contact Us</a></li>
+      </ul>
+      <a href="#" class="action_btn">Get Started</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>         <!--NavBar Start Here -->
+    <div class="dropdown_menu"><!--NavBar dropdown menu Start Here -->
+      <i><a href="#" class="hero">Home</a></i>
+        <i><a href="#" class="about">About</a></i>
+        <i><a href="#" class="getinvloved">Get Invloved</a></i>
+        <i><a href="#" class="events">ServicEvents</a></i>
+        <i><a href="#" class="contact">Contact Us</a></i>
+      <i> <a href="#" class="action_btn">Get Started</a></i>
+    </div>  <!--NavBar Dropdwon menu ends Here -->
+  </header>
+  <main>
+    <section id="hero">
+     
+         <div class="container-swiper">
+          <h1>Welcome</h1>
+          <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    
+                    <div class="swiper-slide"><img src="img/Home.jpg" alt=" Section 1"></div>
+                    <div class="swiper-slide"><img src="img/Logo.JPG" alt="Section 1"></div>
+                    <div class="swiper-slide"><img src="img/Home.JPG" alt=" Section 1"></div>
+                    <div class="swiper-slide"><img src="img/Logo.JPG" alt=" Section 1"></div>
+                    <div class="swiper-slide"><img src="img/Home.JPG" alt=" Section 1"></div>
+                    <div class="swiper-slide"><img src="img/Logo.JPG" alt=" Section 1"></div>
+                    
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+             </div>
+              
+          </div>
+       
+      
+      <script>
+          const swiper = new Swiper('.swiper', {
+              autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+              },
+              loop: true,
+              // If we need pagination
+              pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true
+              },
+              // Navigation arrows
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+             }});
+      </script>
+      </section>
+    
+    
+    </section>
+  </main>
+ 
+
+    <!-- cases -->
+
+    <section id="cases" class="hero cases flex-grid section-padding">
+      <header class="section-header">
+        
+        <h2>More Information</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi, ab tenetur rerum earum voluptate, labore delectus et officiis quo sapiente laudantium necessitatibus iusto ullam, atque esse dolorem. Dolores, aliquam!
+        </p>
+      </header>
+          <div class="column">
+        <a href="./img/home.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+          <img src="./img/home.jpg" alt="case 1" />
+      </a>
+      <a href="./img/home.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+        <img src="./img/home.jpg" alt="case 1" />
+    </a>
+    <a href="./img/home.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+        <img src="./img/home.jpg" alt="case 3" />
+    </a>
+      </div>
+      <div class="column">
+          <a href="./img/home.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+              <img src="./img/home.jpg" alt="case 4" />
+          </a>
+          <a href="./img/home.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+              <img src="./img/home.jpg" alt="case 5" />
+          </a>
+          <a href="./img/home.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, commodi.">
+            <img src="./img/home.jpg" alt="case 6" />
+        </a>
+       </div>
+      
+      
+      </section>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon= document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+    toggleBtn.onclick = function(){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+      
+    }
+    
+  </script>
+</body>
+</html>
